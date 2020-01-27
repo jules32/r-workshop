@@ -21,4 +21,17 @@ library(readxl) # install.packages("readxl")
 library(here) # install.packages("here")
 ```
 
+# Calfornia National Parks Data
+
+```{r read-data}
+
+ca_np <- read_csv(here("data/ca_np.csv"))
+# also be written: 
+ca_np <- read_csv(here("data", "ca_np.csv"))
+# also be written: 
+ca_np <- read_csv("data/ca_np.csv")
+```
+
+
+
 

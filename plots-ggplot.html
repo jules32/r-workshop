@@ -382,6 +382,44 @@ summary {
 library(readxl) # install.packages(&quot;readxl&quot;)
 library(here) # install.packages(&quot;here&quot;)</code></pre>
 </div>
+<div id="calfornia-national-parks-data" class="section level1">
+<h1>Calfornia National Parks Data</h1>
+<pre class="r"><code>ca_np &lt;- read_csv(here(&quot;data/ca_np.csv&quot;))</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   region = col_character(),
+##   state = col_character(),
+##   code = col_character(),
+##   park_name = col_character(),
+##   type = col_character(),
+##   visitors = col_double(),
+##   year = col_double()
+## )</code></pre>
+<pre class="r"><code># also be written: 
+ca_np &lt;- read_csv(here(&quot;data&quot;, &quot;ca_np.csv&quot;))</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   region = col_character(),
+##   state = col_character(),
+##   code = col_character(),
+##   park_name = col_character(),
+##   type = col_character(),
+##   visitors = col_double(),
+##   year = col_double()
+## )</code></pre>
+<pre class="r"><code># also be written: 
+ca_np &lt;- read_csv(&quot;data/ca_np.csv&quot;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   region = col_character(),
+##   state = col_character(),
+##   code = col_character(),
+##   park_name = col_character(),
+##   type = col_character(),
+##   visitors = col_double(),
+##   year = col_double()
+## )</code></pre>
+</div>
 
 
 
