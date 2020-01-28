@@ -83,4 +83,18 @@ ggsave(here("figures", "lobsters-plot.png"))
 ```
 3. knit and sync this all to github
 
+```{r}
+## attachtidyverse to demo tidyr::separate
+library(tidyverse)
+
+## look at the "smiths" data set 
+smiths
+
+## separate!
+smiths %>%
+  tidyr::separate(subject, into = c("first_name", "last_name"))
+
+
+```
+
 
